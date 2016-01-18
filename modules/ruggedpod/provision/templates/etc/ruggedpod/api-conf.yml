@@ -1,0 +1,45 @@
+attention_led:
+    '1': 7
+    '2': 12
+
+power:
+    '1': 7
+    '2': 12
+    '3': 12
+    '4': 12
+
+consumption:
+    '1': toto
+    '2': toto
+    '3': toto
+    '4': toto
+
+reset:
+    '1': 23
+    '2': 21
+    '3': 15
+    '4': 11
+
+onoff:
+    '1': 26
+    '2': 19
+    '3': 13
+    '4': 7
+
+serial_select:
+    '0': 24
+    '1': 22
+
+oil_pump:
+    '1': 12
+
+short_press: 1
+long_press: 6
+
+authentication:
+    enabled: true
+    secret_key: RASlAp4ILZi3rpqIMPCxrBoitx5QW4if5+naB8s2y30=
+    token_lifetime: 3600
+    users:
+        admin: admin
+        ruggedpod: password

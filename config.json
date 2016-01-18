@@ -1,0 +1,20 @@
+{
+    "partitions": {
+        "block_size": "1048576",
+        "disk_size": "1992294400",
+        "boot_size": "67108864"
+    },
+    "debian": {
+        "release": "jessie",
+        "mirror": "http://archive.raspbian.org/raspbian",
+        "mirror_local": "http://localhost:3142/archive.raspbian.org/raspbian",
+        "hostname": "ruggedpod",
+        "root_password": "ruggedpod",
+        "packages": [
+            "openssh-server", "sudo"
+        ]
+    },
+    "output": {
+        "image_name": "ruggedpod-firmware.img"
+    }
+}
