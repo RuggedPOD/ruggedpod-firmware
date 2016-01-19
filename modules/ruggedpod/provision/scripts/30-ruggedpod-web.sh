@@ -2,14 +2,9 @@
 
 set -eux
 
-apt-get install -y nodejs npm
-ln -s /usr/bin/nodejs /usr/bin/node
-
-cd /opt
-git clone https://github.com/RuggedPOD/ruggedpod-web
-chown -R ruggedpod: /opt/ruggedpod-web
-
+cd /tmp
+wget https://github.com/RuggedPOD/ruggedpod-web/releases/download/0.1.0/ruggedpod-web.tar.gz
 mkdir -p /var/www/ruggedpod
-
-rm -rf /var/www/ruggedpod/*
-cp -r /opt/ruggedpod-web/web/* /var/www/ruggedpod
+cd /var/www/ruggedpod
+tar xzf /tmp/ruggedpod-web.tar.gz
+rm -rf /tmp/ruggedpod-web.tar.gz
