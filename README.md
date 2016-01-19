@@ -27,8 +27,6 @@ from the project directory
 ```bash
 $ vagrant up
 $ vagrant ssh
-$ sudo su
-$ cd /vagrant
 ```
 
 Now you are inside the VM as root in the project directory, ready to run the image build.
