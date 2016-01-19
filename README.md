@@ -24,20 +24,24 @@ fresh VM, install requirements and then run the image build.
 
 from the project directory
 
-```
-vagrant up
-vagrant ssh
-sudo su
-cd /vagrant
+```bash
+$ vagrant up
+$ vagrant ssh
+$ sudo su
+$ cd /vagrant
 ```
 
 Now you are inside the VM as root in the project directory, ready to run the image build.
 
-```
-rpi-debian-builder --config config.json --modules-path modules --modules basic,ruggedpod
+```bash
+$ rpi-debian-builder --config config.json --modules-path modules --modules basic,ruggedpod
 ```
 
-When you're done, you can destroy the the VM running `vagrant destroy`.
+When you're done, you can destroy the the VM.
+
+```bash
+$ vagrant destroy
+```
 
 
 ## License
