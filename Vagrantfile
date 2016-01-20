@@ -1,19 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-$setup = <<SCRIPT
-set -ex
-
-cd /root
-apt-get update
-apt-get install -y git
-git clone https://github.com/ggiamarchi/rpi-debian-builder
-cd rpi-debian-builder
-echo '
-export PATH=$PATH:/root/rpi-debian-builder' >> /root/.bashrc
-bash install.sh
-SCRIPT
-
 $auto_root = <<SCRIPT
 echo '
 cd /vagrant
@@ -28,7 +15,7 @@ Vagrant.configure('2') do |config|
   end
 
   # Install requirements
-  config.vm.provision "shell", inline: $setup
+  config.vm.provision "shell", path: 'scripts/install.sh'
 
   # Automatically log as root and go into the project folder when 'vagrant ssh'
   config.vm.provision "shell", inline: $auto_root

@@ -1,0 +1,6 @@
+sudo: required
+dist: trusty
+
+script:
+  - sudo scripts/install.sh
+  - sudo /root/rpi-debian-builder/rpi-debian-builder --config config.json --modules-path modules --modules basic,ruggedpod --trace
