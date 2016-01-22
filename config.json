@@ -11,7 +11,7 @@
         "hostname": "ruggedpod",
         "root_password": "ruggedpod",
         "packages": [
-            "openssh-server", "sudo", "vim"
+            "openssh-server", "sudo", "vim", "tcpdump"
         ]
     },
     "output": {
