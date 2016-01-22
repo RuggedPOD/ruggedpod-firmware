@@ -1,0 +1,14 @@
+{
+    "http": {
+        "port": 9000
+    },
+    "term": {
+        "cols": 80,
+        "rows": 24
+    },
+    "screen": {
+        "cmd": "./screen-safe",
+        "device": "/dev/ttyAMA0",
+        "rate": "19200"
+    }
+}

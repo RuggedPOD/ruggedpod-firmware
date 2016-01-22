@@ -10,7 +10,6 @@ wget https://github.com/GrahamDumpleton/mod_wsgi/archive/${mod_wsgi_version}.tar
 tar xvzf ${mod_wsgi_version}.tar.gz
 cd mod_wsgi-${mod_wsgi_version}
 ./configure && make && sudo make install
-cd
 rm -rf /tmp/mod_wsgi-${mod_wsgi_version}
 sudo bash -c 'echo "LoadModule wsgi_module /usr/lib/apache2/modules/mod_wsgi.so" > /etc/apache2/mods-available/wsgi.load'
 
