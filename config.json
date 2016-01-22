@@ -16,5 +16,12 @@
     },
     "output": {
         "image_name": "ruggedpod-firmware.img"
+    },
+    "network": {
+        "wifi": {
+            "ssid": "test",
+            "psk": "password",
+            "ifname": "wlan0"
+        }
     }
 }
