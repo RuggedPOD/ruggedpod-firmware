@@ -4,3 +4,15 @@ dist: trusty
 script:
   - sudo scripts/install.sh
   - sudo /root/rpi-debian-builder/rpi-debian-builder --config config.json --modules-path modules --modules basic,ruggedpod --trace
+
+before_deploy:
+  - sudo chown travis:travis ruggedpod-firmware.img
+
+deploy:
+  provider: releases
+  api_key:
+    secure: WC5lxoRRfgoWsMloQb5Wkh8hkrC7SsVrO42hZKST+53rSLzuLkyI7xGKYBDqwCTZpRkGr5sRd51CZ2XpAqyY6EjJMpia3748gSwuFc0mBr98Y3HYoX5+5u6TIG/vBS8bEvoatpMXI1uNatnP2leAibwz050zw1KtjQpXnXrTiBk=
+  file: ruggedpod-firmware.img
+  skip_cleanup: true
+  on:
+    tags: true
