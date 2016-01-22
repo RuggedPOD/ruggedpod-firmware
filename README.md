@@ -1,6 +1,6 @@
 # RuggedPOD Firmware
 
-[![Build Status](https://travis-ci.org/RuggedPOD/ruggedpod-firmware.svg?branch=dev)](https://travis-ci.org/RuggedPOD/ruggedpod-firmware)
+[![Build Status](https://travis-ci.org/RuggedPOD/ruggedpod-firmware.svg?branch=master)](https://travis-ci.org/RuggedPOD/ruggedpod-firmware)
 
 This is tooling to automate the RuggedPOD firmware creation. It consists in creating
 a linux image with everything installed to power the RuggedPOD administration. It mainly
