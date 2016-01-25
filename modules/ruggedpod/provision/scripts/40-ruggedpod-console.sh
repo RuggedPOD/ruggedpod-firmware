@@ -2,7 +2,7 @@
 
 set -eux
 
-apt-get install -y nodejs
+apt-get install -y nodejs lsof screen
 
 cd /tmp
 wget https://github.com/RuggedPOD/ruggedpod-web/releases/download/0.1.0/ruggedpod-serial.tar.gz
