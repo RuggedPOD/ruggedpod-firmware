@@ -7,7 +7,7 @@
     "debian": {
         "release": "jessie",
         "mirror": "http://archive.raspbian.org/raspbian",
-        "mirror_local": "http://archive.raspbian.org/raspbian",
+        "mirror_local": "http://localhost:3142/archive.raspbian.org/raspbian",
         "hostname": "ruggedpod",
         "root_password": "ruggedpod",
         "packages": [
