@@ -14,10 +14,6 @@ consumption:
     '3': 3
     '4': 4
 
-dac_power_consumption_addr : 0x6c
-dac_other_addr : 0x6a
-
-
 reset:
     '1': 23
     '2': 21
@@ -39,6 +35,11 @@ oil_pump:
 
 short_press: 1
 long_press: 6
+
+i2c:
+    bus: 1
+    dac_power_consumption_addr : 0x6c
+    dac_other_addr : 0x6a
 
 authentication:
     enabled: true
