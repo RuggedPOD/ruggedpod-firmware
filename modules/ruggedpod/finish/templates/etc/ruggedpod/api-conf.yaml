@@ -47,6 +47,9 @@ authentication:
     token_lifetime: 3600
     token_admin: Lj9MN6TlSWb6j6EvoZIJJYmUHENs2Oxr
 
+storage:
+    file: /var/lib/ruggedpod/ruggedpod.db
+
 dependency_injection:
     profile: production
     dependencies:
