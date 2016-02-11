@@ -3,7 +3,7 @@
 set -eux
 
 cd /tmp
-wget https://github.com/RuggedPOD/ruggedpod-web/releases/download/0.1.0/ruggedpod-web.tar.gz
+wget https://github.com/RuggedPOD/ruggedpod-web/releases/download/0.2.0/ruggedpod-web.tar.gz
 mkdir -p /var/www/ruggedpod
 cd /var/www/ruggedpod
 tar xzf /tmp/ruggedpod-web.tar.gz
