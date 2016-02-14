@@ -25,6 +25,8 @@ d-i	partman/default_filesystem	string	ext3
 
 d-i	pkgsel/include	string	openssh-server
 
-d-i	preseed/late_command string in-target wget --method=DELETE --header="X-Auth-Token: Lj9MN6TlSWb6j6EvoZIJJYmUHENs2Oxr" http://192.168.2.15:5000/v2/blades/1/build ;
+d-i	preseed/late_command string \
+            in-target wget -P /tmp http://192.168.2.15:1080/post-install.sh ; \
+            in-target bash /tmp/post-install.sh ;
 
 d-i	finish-install/reboot_in_progress note
