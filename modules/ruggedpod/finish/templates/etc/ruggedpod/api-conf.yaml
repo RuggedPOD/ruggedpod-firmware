@@ -45,9 +45,10 @@ authentication:
     enabled: true
     secret_key: RASlAp4ILZi3rpqIMPCxrBoitx5QW4if5+naB8s2y30=
     token_lifetime: 3600
-    users:
-        admin: admin
-        ruggedpod: password
+    token_admin: Lj9MN6TlSWb6j6EvoZIJJYmUHENs2Oxr
+
+storage:
+    file: /var/lib/ruggedpod/ruggedpod.db
 
 dependency_injection:
     profile: production

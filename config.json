@@ -1,7 +1,7 @@
 {
     "partitions": {
         "block_size": "1048576",
-        "disk_size": "1258291200",
+        "disk_size": "1992294400",
         "boot_size": "67108864"
     },
     "debian": {
@@ -16,5 +16,12 @@
     },
     "output": {
         "image_name": "ruggedpod-firmware.img"
+    },
+    "network": {
+        "wifi": {
+            "ssid": "test",
+            "psk": "password",
+            "ifname": "wlan0"
+        }
     }
 }
