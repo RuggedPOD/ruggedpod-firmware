@@ -34,7 +34,8 @@ $ vagrant ssh
 Now you are inside the VM as root in the project directory, ready to run the image build.
 
 ```bash
-$ rpi-debian-builder --config config.json --modules-path modules --modules basic,ruggedpod
+$ rpi-debian-builder --config config.json --modules-path modules \
+                     --modules basic,ruggedpod,network,pxedeploy,pxedeploy-ubuntu-1404
 ```
 
 When you're done, you can destroy the the VM.

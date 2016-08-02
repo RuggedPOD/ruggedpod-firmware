@@ -4,7 +4,7 @@ set -ex
 
 cd /root
 apt-get update
-apt-get install -y git
+apt-get install -y --force-yes git
 git clone https://github.com/ggiamarchi/rpi-debian-builder
 cd rpi-debian-builder
 echo '
