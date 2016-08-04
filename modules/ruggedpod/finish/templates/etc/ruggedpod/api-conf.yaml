@@ -1,9 +1,3 @@
-consumption:
-    '1': 1
-    '2': 2
-    '3': 3
-    '4': 4
-
 reset:
     '1': 23
     '2': 21
@@ -27,9 +21,15 @@ short_press: 1
 long_press: 6
 
 i2c:
+    device_lookup_command: 'ls -1 /dev/i2c-*'
+    consumption:
+        '1': 1
+        '2': 2
+        '3': 3
+        '4': 4
+    # Only present for legacy API (v1)
     bus: 1
     dac_power_consumption_addr : 0x6c
-    dac_other_addr : 0x6a
 
 authentication:
     enabled: true
@@ -63,3 +63,10 @@ dependency_injection:
             production:
                 import: ruggedpod_api.services.ADCPi.ABE_ADCPi
                 from: ADCPi
+        i2c_bus_discovery:
+            development:
+                import: ruggedpod_api.mocks
+                from: I2CBusDiscovery
+            production:
+                import: ruggedpod_api.services.i2c
+                from: I2CBusDiscovery
