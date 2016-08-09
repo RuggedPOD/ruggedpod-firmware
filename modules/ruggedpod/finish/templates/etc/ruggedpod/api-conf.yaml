@@ -21,7 +21,7 @@ short_press: 1
 long_press: 6
 
 i2c:
-    device_lookup_command: 'ls -1 /dev/i2c-*'
+    bus_lookup_command: 'ls -1 /dev/i2c-*'
     consumption:
         '1': 1
         '2': 2
